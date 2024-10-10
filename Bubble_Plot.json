@@ -1,0 +1,111 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 900,
+  "height": 450,
+  "title": "Relationship Between Mean Household Income and Crime Index by State in 2020",
+  "data": {
+    "url": "https://raw.githubusercontent.com/wongjunwei030203/FIT3179_Assignment_2/main/Crime_Income.csv"
+  },
+  "transform": [
+    {"filter": "datum['Income'] != null"},
+    {"filter": "datum['Crime Index'] != null"},
+    {"filter": "datum['Population'] != null"}
+  ],
+  "params": [
+    {
+      "name": "RegionSelection",
+      "value": "All",
+      "bind": {
+        "input": "select",
+        "options": ["All", "East Malaysia", "West Malaysia"],
+        "labels": ["All", "East Malaysia", "West Malaysia"],
+        "name": "Select Region: "
+      }
+    }
+  ],
+  "transform": [
+    {"filter": "datum['Income'] != null"},
+    {"filter": "datum['Crime Index'] != null"},
+    {"filter": "datum['Population'] != null"},
+    {
+      "filter": "RegionSelection == 'All' || datum['Region'] == RegionSelection"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "Income",
+      "type": "quantitative",
+      "title": "Mean Household Income",
+      "axis": {
+        "labelAngle": -45,
+        "tickCount": 7
+      },
+      "scale": {
+        "type": "linear",
+        "domain": [4000, 12000]
+      }
+    },
+    "y": {
+      "field": "Crime Index",
+      "type": "quantitative",
+      "title": "Crime Index",
+      "axis": {
+        "tickCount": 6
+      },
+      "scale": {
+        "type": "linear",
+        "domain": [400, 20000]
+      }
+    },
+    "color": {
+      "field": "Region",
+      "type": "nominal",
+      "title": "Region"
+    }
+  },
+  "layer": [
+    {
+      "mark": "circle",
+      "encoding": {
+        "size": {
+          "field": "Population",
+          "type": "quantitative",
+          "title": "Population"
+        },
+        "tooltip": [
+          {"field": "State", "type": "nominal", "title": "State"},
+          {"field": "Income", "type": "quantitative", "title": "Income", "format": ","},
+          {"field": "Crime Index", "type": "quantitative", "title": "Crime Index", "format": ","},
+          {"field": "Population", "type": "quantitative", "title": "Population", "format": ","}
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "baseline": "middle",
+        "dx": -12,
+        "fontSize": 11.5,
+        "fontStyle": "italic"
+      },
+      "encoding": {
+        "text": {"field": "State", "type": "nominal"},
+        "color": {"value": "black"},
+        "opacity": {
+          "condition": {
+            "test": "datum['State'] == 'Selangor' || datum['State'] == 'Kuala Lumpur' || datum['State'] == 'Johor' || datum['State'] == 'Perlis' || datum['State'] == 'Kelantan' || datum['State'] == 'Sarawak' || datum['State'] == 'Melaka' || datum['State'] == 'Pulau Pinang'",
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {"field": "State", "type": "nominal", "title": "State"},
+          {"field": "Income", "type": "quantitative", "title": "Income", "format": ","},
+          {"field": "Crime Index", "type": "quantitative", "title": "Crime Index", "format": ","},
+          {"field": "Population", "type": "quantitative", "title": "Population", "format": ","}
+        ]
+      }
+    }
+  ]
+}
