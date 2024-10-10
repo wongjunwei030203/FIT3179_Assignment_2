@@ -64,6 +64,7 @@
       "data": {
         "url": "https://raw.githubusercontent.com/wongjunwei030203/FIT3179_Assignment_2/main/Map_data.csv"
       },
+      
       "mark": "rule",
       "encoding": {
         "longitude": {"field": "Longitude", "type": "quantitative"},
