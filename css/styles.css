@@ -1,5 +1,5 @@
 body *{
-    font-family: 'Cambria', serif;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 body, html {
@@ -19,12 +19,12 @@ h1 {
 }
 
 body {
-    background-color: rgb(231, 247, 244);
+    background-color: rgb(177, 210, 224);
 }
 
 .page {
     max-width: 1305px;
-    background-color: rgb(231, 247, 244);
+    background-color: rgb(177, 210, 224);
     margin: auto;
     padding-left: 45px;
     padding-right: 45px;
