@@ -3,7 +3,6 @@
   "width": 900,
   "height": 450,
   "background": "transparent",
-  "title":"Trends in Education Expenditure, Poverty Rate, and Unemployment Rate from 1992 to 2022",
   "data": {
     "url": "https://raw.githubusercontent.com/wongjunwei030203/FIT3179_Assignment_2/main/Line_Chart_data.csv",
     "format": {
