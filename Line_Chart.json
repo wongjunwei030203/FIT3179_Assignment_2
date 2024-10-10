@@ -2,7 +2,6 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 900,
   "height": 450,
-  "background": "transparent",
   "title":"Trends in Education Expenditure, Poverty Rate, and Unemployment Rate from 1992 to 2022",
   "data": {
     "url": "https://raw.githubusercontent.com/wongjunwei030203/FIT3179_Assignment_2/main/Line_Chart_data.csv",
@@ -27,13 +26,17 @@
       "title": "Year",
       "axis": {
         "tickCount": {"interval": "year", "step": 2},
-        "format": "%Y"
+        "format": "%Y",
+        "grid": false
       }
     },
     "y": {
       "field": "Value",
       "type": "quantitative",
-      "title": "Value"
+      "title": "Value",
+      "axis": {
+        "grid": false
+      }
     },
     "color": {
       "field": "Category",
