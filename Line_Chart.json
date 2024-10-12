@@ -49,6 +49,11 @@
       "type": "nominal",
       "title": "Category",
       "legend": {"orient": "top-left"}
-    }
+    },
+    "tooltip": [
+      {"field": "Year", "type": "temporal", "title": "Year", "format": "%Y"},
+      {"field": "Category", "type": "nominal", "title": "Category"},
+      {"field": "Value", "type": "quantitative", "title": "Value"}
+    ]
   }
 }
