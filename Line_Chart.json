@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-  "text": "Trends in Education Expenditure, Poverty Rate, and Unemployment Rate from 1992 to 2022",
+  "text": "Trends in Education Expenditure, Poverty Rate, and Unemployment Rate",
   "font": "Lato",
   "anchor": "start",
   "fontSize": 17
