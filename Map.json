@@ -41,7 +41,7 @@
           "scale": {
             "type": "threshold",
             "domain": [80, 85, 90, 95, 100, 105],
-            "range": ["#f7fbff", "#deebf7", "#c6dbef", "#9ecae1", "#6baed6", "#3182bd"]
+            "range": ["#fff5eb", "#fee6ce", "#fdd0a2", "#fdae6b", "#fd8d3c", "#e6550d"]
           },
           "legend": {
             "titleAlign": "center",
