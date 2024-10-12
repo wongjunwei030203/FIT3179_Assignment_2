@@ -9,7 +9,7 @@
     "center": [107.6, 4.2105]
   },
   "data": {
-    "url": "https://raw.githubusercontent.com/wongjunwei030203/FIT3179_Assignment_2/main/malaysia-states.topojson",
+    "url": "https://raw.githubusercontent.com/wongjunwei030203/FIT3179_Assignment_2/main/data/malaysia-states.topojson",
     "format": {
       "type": "topojson",
       "feature": "states"
