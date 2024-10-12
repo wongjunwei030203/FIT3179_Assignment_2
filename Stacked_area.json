@@ -4,7 +4,7 @@
   "height": 470,
   "background": "transparent",
   "data": {
-    "url": "Stacked_area_data.csv",
+    "url": "https://raw.githubusercontent.com/wongjunwei030203/FIT3179_Assignment_2/main/Stacked_area_data.csv",
     "format": {
       "type": "csv"
     }
