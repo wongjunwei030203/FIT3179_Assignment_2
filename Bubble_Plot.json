@@ -1,5 +1,11 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+  "text": "Insert title here",
+  "font": "Lato",
+  "anchor": "start",
+  "fontSize": 17
+  },
   "width": 630,
   "height": 470,
   "background": "transparent",
