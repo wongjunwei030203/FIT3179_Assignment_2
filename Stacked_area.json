@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 630,
+  "height": 470,
+  "background": "transparent",
+  "data": {
+    "url": "Stacked_area_data.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "mark": "area",
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "title": "Year",
+      "axis": {
+        "tickCount": {"interval": "year", "step": 2},
+        "format": "%Y",
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "Number of secondary schools",
+      "type": "quantitative",
+      "title": "Number of Secondary Schools",
+      "axis": {
+        "grid": false
+      }
+    },
+    "color": {
+      "field": "State",
+      "type": "nominal",
+      "title": "State"
+    },
+    "tooltip": [
+      {"field": "Year", "type": "temporal", "title": "Year", "format": "%Y"},
+      {"field": "State", "type": "nominal", "title": "State"},
+      {"field": "Number of secondary schools", "type": "quantitative", "title": "Number of Secondary Schools"}
+    ]
+  }
+}
