@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-  "text": "Insert title here",
+  "text": "Relationship Between Mean Household Income and Crime Index by State in 2020",
   "font": "Lato",
   "anchor": "start",
   "fontSize": 17
