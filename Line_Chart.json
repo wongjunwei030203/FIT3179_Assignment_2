@@ -10,7 +10,7 @@
   "height": 470,
   "background": "transparent",
   "data": {
-    "url": "https://raw.githubusercontent.com/wongjunwei030203/FIT3179_Assignment_2/main/Line_Chart_data.csv",
+    "url": "https://raw.githubusercontent.com/wongjunwei030203/FIT3179_Assignment_2/main/data/Line_Chart_data.csv",
     "format": {
       "type": "csv"
     }
