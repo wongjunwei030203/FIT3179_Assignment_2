@@ -44,13 +44,29 @@
           "#8B4513", "#D2B48C", "#BC8F8F", "#A0522D", "#CD853F",
           "#F4A460", "#DEB887", "#DAA520", "#BDB76B", "#808000",
           "#6B8E23", "#556B2F", "#8FBC8F", "#4682B4"
+
+
         ]
       }
+    },
+    "opacity": {
+      "condition": {
+        "selection": "highlight",
+        "value": 1
+      },
+      "value": 0.7
     },
     "tooltip": [
       {"field": "Year", "type": "temporal", "title": "Year", "format": "%Y"},
       {"field": "State", "type": "nominal", "title": "State"},
       {"field": "Number of secondary schools", "type": "quantitative", "title": "Number of Secondary Schools"}
     ]
+  },
+  "selection": {
+    "highlight": {
+      "type": "single",
+      "on": "mouseover",
+      "empty": "none"
+    }
   }
 }
