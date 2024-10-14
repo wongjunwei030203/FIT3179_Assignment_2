@@ -21,6 +21,14 @@
       "as": ["Category", "Value"]
     }
   ],
+  "selection": {
+    "highlight": {
+      "type": "single",
+      "fields": ["Category"],
+      "on": "mouseover",
+      "empty": "none"
+    }
+  },
   "mark": {
     "type": "line",
     "interpolate": "monotone"
@@ -47,14 +55,14 @@
     "color": {
       "field": "Category",
       "type": "nominal",
-      "scale": {
-        "domain": ["Education expenditure", "Poverty rate", "Unemployment rate"],
-        "range": ["#1f77b4", "#ff7f0e", "#2ca02c"]
+      "title": "Category"
+    },
+    "opacity": {
+      "condition": {
+        "selection": "highlight",
+        "value": 1
       },
-      "title": "Category",
-      "legend": {
-        "orient": "top-left"
-      }
+      "value": 0.7
     },
     "tooltip": [
       {"field": "Year", "type": "temporal", "title": "Year", "format": "%Y"},
