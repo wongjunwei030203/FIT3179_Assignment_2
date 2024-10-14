@@ -1,0 +1,121 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+  "text": "Relationship Between Crime Index and Unemployment rates by State in 2020",
+  "font": "Lato",
+  "anchor": "start",
+  "fontSize": 17
+  },
+  "width": 470,
+  "height": 470,
+  "background": "transparent",
+  "data": {
+    "url": "https://raw.githubusercontent.com/wongjunwei030203/FIT3179_Assignment_2/main/data/Bubble_Plot_data.csv"
+  },
+  "transform": [
+    {"filter": "datum['Crime Index'] != null"},
+    {"filter": "datum['Unemployment'] != null"},
+    {"filter": "datum['Population'] != null"}
+  ],
+  "params": [
+    {
+      "name": "RegionSelection",
+      "value": "All",
+      "bind": {
+        "input": "select",
+        "options": ["All", "East Malaysia", "West Malaysia"],
+        "labels": ["All", "East Malaysia", "West Malaysia"],
+        "name": "Select Region: "
+      }
+    }
+  ],
+  "transform": [
+    {"filter": "datum['Crime Index'] != null"},
+    {"filter": "datum['Unemployment'] != null"},
+    {"filter": "datum['Population'] != null"},
+    {
+      "filter": "RegionSelection == 'All' || datum['Region'] == RegionSelection"
+    }
+  ],
+  "encoding": {
+    "y": {
+      "field": "Crime Index",
+      "type": "quantitative",
+      "title": "Crime Index",
+      "axis": {
+        "labelAngle": 0,
+        "tickCount": 7
+      },
+      "scale": {
+        "type": "linear",
+        "domain": [400, 20000]
+      }
+    },
+    "x": {
+      "field": "Unemployment",
+      "type": "quantitative",
+      "title": "Unemployment",
+      "axis": {
+        "tickCount": 6
+      },
+      "scale": {
+        "type": "linear",
+        "domain": [0, 10]
+      }
+    },
+    "color": {
+      "field": "Region",
+      "type": "nominal",
+      "title": "Region",
+      "scale": {
+        "domain": ["East Malaysia", "West Malaysia"],
+        "range": ["#8B4513", "#4682B4"] 
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": "circle",
+      "encoding": {
+        "size": {
+          "field": "Population",
+          "type": "quantitative",
+          "title": "Population"
+        },
+        "tooltip": [
+          {"field": "State", "type": "nominal", "title": "State"},
+          {"field": "Crime Index", "type": "quantitative", "title": "Crime Index", "format": ","},
+          {"field": "Unemployment", "type": "quantitative", "title": "Unemployment", "format": ","},
+          {"field": "Population", "type": "quantitative", "title": "Population", "format": ","}
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "baseline": "middle",
+        "dx": -12,
+        "fontSize": 11.5,
+        "fontStyle": "italic"
+      },
+      "encoding": {
+        "text": {"field": "State", "type": "nominal"},
+        "color": {"value": "black"},
+        "opacity": {
+          "condition": {
+            "test": "datum['State'] == 'Selangor' || datum['State'] == 'Kuala Lumpur' || datum['State'] == 'Johor' || datum['State'] == 'Perlis' || datum['State'] == 'Kelantan' || datum['State'] == 'Sarawak' || datum['State'] == 'Melaka' || datum['State'] == 'Pulau Pinang'",
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {"field": "State", "type": "nominal", "title": "State"},
+          {"field": "Crime Index", "type": "quantitative", "title": "Crime Index", "format": ","},
+          {"field": "Unemployment", "type": "quantitative", "title": "Unemployment", "format": ","},
+          {"field": "Population", "type": "quantitative", "title": "Population", "format": ","}
+        ]
+      }
+    }
+  ]
+}
