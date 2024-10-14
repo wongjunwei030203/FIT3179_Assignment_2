@@ -70,7 +70,8 @@
             "symbolStrokeWidth": 10,
             "symbolType": "square",
             "direction": "horizontal",
-            "orient": "bottom-left"
+            "orient": "bottom-left",
+            "titleLimit": 300
           }
         },
         "tooltip": [
