@@ -29,6 +29,13 @@
       }
     }
   ],
+  "selection": {
+    "highlight": {
+      "type": "single",
+      "on": "mouseover",
+      "empty": "none"
+    }
+  },
   "transform": [
     {"filter": "datum['Enrolment'] != null"},
     {"filter": "datum['Unemployment'] != null"},
