@@ -31,7 +31,7 @@
       "type": "temporal",
       "title": "Year",
       "axis": {
-        "tickCount": {"interval": "year", "step": 2},
+        "tickCount": "year",
         "format": "%Y",
         "grid": false
       }
