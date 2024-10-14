@@ -55,7 +55,10 @@
     "color": {
       "field": "Category",
       "type": "nominal",
-      "title": "Category"
+      "title": "Category",
+      "legend": {
+        "orient": "top-left"
+      }
     },
     "opacity": {
       "condition": {
