@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-  "text": "Relationship Between Secondary school enrolment rate and Crime index by State in 2020",
+  "text": "Relationship Between Secondary school enrolment rate and Unemployment rates by State in 2020",
   "font": "Lato",
   "anchor": "start",
   "fontSize": 17
@@ -10,11 +10,11 @@
   "height": 470,
   "background": "transparent",
   "data": {
-    "url": "https://raw.githubusercontent.com/wongjunwei030203/FIT3179_Assignment_2/main/data/Enrolment_crime.csv"
+    "url": "https://raw.githubusercontent.com/wongjunwei030203/FIT3179_Assignment_2/main/data/Bubble_Plot_data.csv"
   },
   "transform": [
     {"filter": "datum['Enrolment'] != null"},
-    {"filter": "datum['Crime Index'] != null"},
+    {"filter": "datum['Unemployment'] != null"},
     {"filter": "datum['Population'] != null"}
   ],
   "params": [
@@ -31,7 +31,7 @@
   ],
   "transform": [
     {"filter": "datum['Enrolment'] != null"},
-    {"filter": "datum['Crime Index'] != null"},
+    {"filter": "datum['Unemployment'] != null"},
     {"filter": "datum['Population'] != null"},
     {
       "filter": "RegionSelection == 'All' || datum['Region'] == RegionSelection"
@@ -52,15 +52,15 @@
       }
     },
     "y": {
-      "field": "Crime Index",
+      "field": "Unemployment",
       "type": "quantitative",
-      "title": "Crime Index",
+      "title": "Unemployment",
       "axis": {
         "tickCount": 6
       },
       "scale": {
         "type": "linear",
-        "domain": [400, 20000]
+        "domain": [0, 10]
       }
     },
     "color": {
@@ -85,7 +85,7 @@
         "tooltip": [
           {"field": "State", "type": "nominal", "title": "State"},
           {"field": "Enrolment", "type": "quantitative", "title": "Enrolment", "format": ","},
-          {"field": "Crime Index", "type": "quantitative", "title": "Crime Index", "format": ","},
+          {"field": "Unemployment", "type": "quantitative", "title": "Unemployment", "format": ","},
           {"field": "Population", "type": "quantitative", "title": "Population", "format": ","}
         ]
       }
@@ -104,7 +104,7 @@
         "color": {"value": "black"},
         "opacity": {
           "condition": {
-            "test": "datum['State'] == 'Selangor' || datum['State'] == 'Kuala Lumpur' || datum['State'] == 'Johor' || datum['State'] == 'Perlis' || datum['State'] == 'Kelantan' || datum['State'] == 'Sarawak' || datum['State'] == 'Melaka' || datum['State'] == 'Pulau Pinang' || datum['State'] == 'Negeri Sembilan'",
+            "test": "datum['State'] == 'Selangor' || datum['State'] == 'Kuala Lumpur' || datum['State'] == 'Johor' || datum['State'] == 'Perlis' || datum['State'] == 'Kelantan' || datum['State'] == 'Sarawak' || datum['State'] == 'Melaka' || datum['State'] == 'Pulau Pinang'",
             "value": 1
           },
           "value": 0
@@ -112,7 +112,7 @@
         "tooltip": [
           {"field": "State", "type": "nominal", "title": "State"},
           {"field": "Enrolment", "type": "quantitative", "title": "Enrolment", "format": ","},
-          {"field": "Crime Index", "type": "quantitative", "title": "Crime Index", "format": ","},
+          {"field": "Unemployment", "type": "quantitative", "title": "Unemployment", "format": ","},
           {"field": "Population", "type": "quantitative", "title": "Population", "format": ","}
         ]
       }
