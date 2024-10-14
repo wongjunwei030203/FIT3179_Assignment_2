@@ -29,12 +29,10 @@
   ],
   "layer": [
     {
-      
       "mark": {
         "type": "geoshape",
         "stroke": "black"
       },
-      
       "encoding": {
         "color": {
           "field": "Secondary school enrolment rate",
@@ -53,7 +51,8 @@
             "symbolStrokeWidth": 10,
             "symbolType": "square",
             "direction": "horizontal",
-            "orient": "bottom-left"
+            "orient": "bottom-right",
+            "titleLimit": 300
           }
         },
         "tooltip": [
