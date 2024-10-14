@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-  "text": "Relationship Between Mean Household Income and Crime Index by State in 2020",
+  "text": "Relationship Between Secondary school enrolment rate and Crime index by State in 2020",
   "font": "Lato",
   "anchor": "start",
   "fontSize": 17
@@ -10,10 +10,10 @@
   "height": 470,
   "background": "transparent",
   "data": {
-    "url": "https://raw.githubusercontent.com/wongjunwei030203/FIT3179_Assignment_2/main/data/Crime_Income.csv"
+    "url": "https://raw.githubusercontent.com/wongjunwei030203/FIT3179_Assignment_2/main/data/Enrolment_crime.csv"
   },
   "transform": [
-    {"filter": "datum['Income'] != null"},
+    {"filter": "datum['Enrolment'] != null"},
     {"filter": "datum['Crime Index'] != null"},
     {"filter": "datum['Population'] != null"}
   ],
@@ -30,7 +30,7 @@
     }
   ],
   "transform": [
-    {"filter": "datum['Income'] != null"},
+    {"filter": "datum['Enrolment'] != null"},
     {"filter": "datum['Crime Index'] != null"},
     {"filter": "datum['Population'] != null"},
     {
@@ -39,16 +39,16 @@
   ],
   "encoding": {
     "x": {
-      "field": "Income",
+      "field": "Enrolment",
       "type": "quantitative",
-      "title": "Mean Household Income",
+      "title": "Secondary school enrolment rate",
       "axis": {
         "labelAngle": -45,
         "tickCount": 7
       },
       "scale": {
         "type": "linear",
-        "domain": [4000, 12000]
+        "domain": [80, 105]
       }
     },
     "y": {
@@ -84,7 +84,7 @@
         },
         "tooltip": [
           {"field": "State", "type": "nominal", "title": "State"},
-          {"field": "Income", "type": "quantitative", "title": "Income", "format": ","},
+          {"field": "Enrolment", "type": "quantitative", "title": "Enrolment", "format": ","},
           {"field": "Crime Index", "type": "quantitative", "title": "Crime Index", "format": ","},
           {"field": "Population", "type": "quantitative", "title": "Population", "format": ","}
         ]
@@ -111,7 +111,7 @@
         },
         "tooltip": [
           {"field": "State", "type": "nominal", "title": "State"},
-          {"field": "Income", "type": "quantitative", "title": "Income", "format": ","},
+          {"field": "Enrolment", "type": "quantitative", "title": "Enrolment", "format": ","},
           {"field": "Crime Index", "type": "quantitative", "title": "Crime Index", "format": ","},
           {"field": "Population", "type": "quantitative", "title": "Population", "format": ","}
         ]
