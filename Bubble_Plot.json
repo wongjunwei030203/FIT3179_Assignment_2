@@ -38,7 +38,7 @@
     }
   ],
   "encoding": {
-    "x": {
+    "y": {
       "field": "Enrolment",
       "type": "quantitative",
       "title": "Secondary school enrolment rate",
@@ -51,7 +51,7 @@
         "domain": [80, 105]
       }
     },
-    "y": {
+    "x": {
       "field": "Unemployment",
       "type": "quantitative",
       "title": "Unemployment",
