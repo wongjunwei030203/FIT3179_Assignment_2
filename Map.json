@@ -29,30 +29,13 @@
   ],
   "layer": [
     {
-      "selection": {
-        "grid": {
-          "type": "interval",
-          "bind": "scales"
-        },
-        "hover": {
-          "type": "single",
-          "on": "mouseover",
-          "clear": "mouseout",
-          "empty": "all"
-        }
-      },
+      
       "mark": {
         "type": "geoshape",
         "stroke": "black"
       },
+      
       "encoding": {
-        "opacity": {
-          "condition": {
-            "selection": "hover",
-            "value": 0.7
-          },
-          "value": 0.2
-        },
         "color": {
           "field": "Secondary school enrolment rate",
           "type": "quantitative",
@@ -70,8 +53,7 @@
             "symbolStrokeWidth": 10,
             "symbolType": "square",
             "direction": "horizontal",
-            "orient": "bottom-left",
-            "titleLimit": 300
+            "orient": "bottom-left"
           }
         },
         "tooltip": [
