@@ -1,10 +1,10 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-  "text": "Trends in Education Expenditure, Poverty Rate, and Unemployment Rate",
-  "font": "Lato",
-  "anchor": "start",
-  "fontSize": 17
+    "text": "Trends in Education Expenditure, Poverty Rate, and Unemployment Rate",
+    "font": "Lato",
+    "anchor": "start",
+    "fontSize": 17
   },
   "width": 520,
   "height": 470,
@@ -47,8 +47,11 @@
     "color": {
       "field": "Category",
       "type": "nominal",
-      "title": "Category",
-      "legend": {"orient": "top-left"}
+      "scale": {
+        "domain": ["Education expenditure", "Poverty rate", "Unemployment rate"],
+        "range": ["#1f77b4", "#ff7f0e", "#2ca02c"]
+      },
+      "title": "Category"
     },
     "tooltip": [
       {"field": "Year", "type": "temporal", "title": "Year", "format": "%Y"},
