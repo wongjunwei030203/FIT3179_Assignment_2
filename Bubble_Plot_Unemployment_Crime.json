@@ -71,10 +71,29 @@
         "domain": ["East Malaysia", "West Malaysia"],
         "range": ["#8B4513", "#4682B4"] 
       }
+    },
+    "opacity": {
+      "condition": {
+        "selection": "hover",
+        "value": 0.7
+      },
+      "value": 0.2
     }
   },
   "layer": [
     {
+      "selection": {
+        "grid": {
+          "type": "interval",
+          "bind": "scales"
+        },
+        "hover": {
+          "type": "single",
+          "on": "mouseover",
+          "clear": "mouseout",
+          "empty": "all"
+        }
+      },
       "mark": "circle",
       "encoding": {
         "size": {
