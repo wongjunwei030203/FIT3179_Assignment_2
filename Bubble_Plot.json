@@ -123,7 +123,7 @@
         "color": {"value": "black"},
         "opacity": {
           "condition": {
-            "test": "datum['State'] == 'Perlis' || datum['State'] == 'Kuala Lumpur' || datum['State'] == 'Selangor' || datum['State'] == 'Negeri Sembilan' || datum['State'] == 'Pulau Pinang' || datum['State'] == 'Sabah'",
+            "test": "datum['State'] == 'Perlis' || datum['State'] == 'Kuala Lumpur' || datum['State'] == 'Selangor' || datum['State'] == 'Negeri Sembilan' || datum['State'] == 'Pahang' || datum['State'] == 'Sabah' || datum['State'] == 'Pahang'",
             "value": 1
           },
           "value": 0
