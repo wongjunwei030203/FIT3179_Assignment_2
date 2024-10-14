@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Trends in Unemployment, Poverty, and Education Expenditure Over Time",
+    "text": "Trends in Education Expenditure, Poverty Rate, and Unemployment Rate",
     "font": "Lato",
     "anchor": "start",
     "fontSize": 17
@@ -29,6 +29,18 @@
       "empty": "none"
     }
   },
+  "params": [
+    {
+      "name": "CategorySelection",
+      "value": "All",
+      "bind": {
+        "input": "select",
+        "options": ["All", "Education expenditure", "Poverty rate", "Unemployment rate"],
+        "labels": ["All", "Education expenditure", "Poverty rate", "Unemployment rate"],
+        "name": "Select Category: "
+      }
+    }
+  ],
   "mark": {
     "type": "line",
     "interpolate": "monotone"
@@ -62,10 +74,10 @@
     },
     "opacity": {
       "condition": {
-        "selection": "highlight",
+        "test": "CategorySelection === 'All' || datum.Category === CategorySelection",
         "value": 1
       },
-      "value": 0.7
+      "value": 0.2
     },
     "tooltip": [
       {"field": "Year", "type": "temporal", "title": "Year", "format": "%Y"},
