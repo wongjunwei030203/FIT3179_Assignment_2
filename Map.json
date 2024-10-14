@@ -51,7 +51,7 @@
             "symbolStrokeWidth": 10,
             "symbolType": "square",
             "direction": "horizontal",
-            "orient": "bottom-right"
+            "orient": "bottom-left"
           }
         },
         "tooltip": [
