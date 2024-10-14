@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Trends in Education Expenditure, Poverty Rate, and Unemployment Rate",
+    "text": "Trends in Unemployment, Poverty, and Education Expenditure Over Time",
     "font": "Lato",
     "anchor": "start",
     "fontSize": 17
