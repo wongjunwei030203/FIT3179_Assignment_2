@@ -55,8 +55,8 @@
           "title": "Secondary School Enrolment Rate",
           "scale": {
             "type": "threshold",
-            "domain": [80, 85, 90, 95, 100, 105],
-            "range": ["#e5f5e0", "#c7e9c0", "#a1d99b", "#74c476", "#31a354", "#006d2c"]
+            "domain": [80, 85, 90, 95, 100],
+            "range": ["#e5f5e0", "#c7e9c0", "#a1d99b", "#74c476", "#31a354"]
           },
           "legend": {
             "titleAlign": "center",
