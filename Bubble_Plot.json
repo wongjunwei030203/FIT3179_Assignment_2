@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-  "text": "Relationship Between Secondary school enrolment rate and Unemployment rates by State in 2020",
+  "text": "Secondary school enrolment rate versus Unemployment rates by State in 2020",
   "font": "Lato",
   "anchor": "start",
   "fontSize": 17
