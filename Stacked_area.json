@@ -1,10 +1,10 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-  "text": "Number of secondary schools by state over time",
-  "font": "Lato",
-  "anchor": "start",
-  "fontSize": 17
+    "text": "Number of secondary schools by state over time",
+    "font": "Lato",
+    "anchor": "start",
+    "fontSize": 17
   },
   "width": 470,
   "height": 480,
@@ -38,7 +38,14 @@
     "color": {
       "field": "State",
       "type": "nominal",
-      "title": "State"
+      "title": "State",
+      "scale": {
+        "range": [
+          "#8B4513", "#D2B48C", "#BC8F8F", "#A0522D", "#CD853F",
+          "#F4A460", "#DEB887", "#DAA520", "#BDB76B", "#808000",
+          "#6B8E23", "#556B2F", "#8FBC8F", "#4682B4"
+        ]
+      }
     },
     "tooltip": [
       {"field": "Year", "type": "temporal", "title": "Year", "format": "%Y"},
