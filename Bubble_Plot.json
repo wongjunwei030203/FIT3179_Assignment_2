@@ -104,7 +104,7 @@
         "color": {"value": "black"},
         "opacity": {
           "condition": {
-            "test": "datum['State'] == 'Selangor' || datum['State'] == 'Kuala Lumpur' || datum['State'] == 'Johor' || datum['State'] == 'Perlis' || datum['State'] == 'Kelantan' || datum['State'] == 'Sarawak' || datum['State'] == 'Melaka' || datum['State'] == 'Pulau Pinang'",
+            "test": "datum['State'] == 'Perlis'",
             "value": 1
           },
           "value": 0
