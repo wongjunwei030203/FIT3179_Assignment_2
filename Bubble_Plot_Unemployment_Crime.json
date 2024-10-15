@@ -105,7 +105,7 @@
           {"field": "State", "type": "nominal", "title": "State"},
           {"field": "Crime Index", "type": "quantitative", "title": "Crime Index", "format": ","},
           {"field": "Mean Income", "type": "quantitative", "title": "Mean Income", "format": ","},
-          {"field": "Population", "type": "quantitative", "title": "Population", "format": ","}
+          {"field": "GDP", "type": "quantitative", "title": "GDP", "format": ","}
         ]
       }
     },
