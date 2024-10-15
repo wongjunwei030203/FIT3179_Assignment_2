@@ -69,7 +69,7 @@
       "type": "nominal",
       "scale": {
         "domain": ["Education expenditure", "Poverty rate", "Unemployment rate"],
-        "range": ["#4B0082", "#FFC300", "#FFB3E6"]
+        "range": ["#C492E8", "#FFC300", "#FFB3E6"]
       },
       "title": "Category",
       "legend": {
