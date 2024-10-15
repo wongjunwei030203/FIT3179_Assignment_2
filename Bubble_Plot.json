@@ -19,13 +19,13 @@
   ],
   "params": [
     {
-      "name": "RegionSelection",
+      "name": "QuartileSelection",
       "value": "All",
       "bind": {
         "input": "select",
-        "options": ["All", "East Malaysia", "West Malaysia"],
-        "labels": ["All", "East Malaysia", "West Malaysia"],
-        "name": "Select Region: "
+        "options": ["All", "Quartile 1", "Middle Income", "Quartile 3"],
+        "labels": ["All", "Quartile 1", "Middle Income", "Quartile 3"],
+        "name": "Select Income Quartile: "
       }
     }
   ],
@@ -34,7 +34,7 @@
     {"filter": "datum['Mean Income'] != null"},
     {"filter": "datum['Population'] != null"},
     {
-      "filter": "RegionSelection == 'All' || datum['Region'] == RegionSelection"
+      "filter": "QuartileSelection == 'All' || datum['Quartile'] == QuartileSelection"
     }
   ],
   "encoding": {
@@ -66,7 +66,7 @@
     "color": {
       "field": "Quartile",
       "type": "nominal",
-      "title": "Income quartile",
+      "title": "Quartile",
       "scale": {
         "domain": ["Quartile 1", "Middle Income", "Quartile 3"],
         "range": ["#1f77b4", "#ff7f0e", "#2ca02c"]
@@ -124,7 +124,7 @@
         "color": {"value": "black"},
         "opacity": {
           "condition": {
-            "test": "datum['State'] == 'Perlis' || datum['State'] == 'Kuala Lumpur' || datum['State'] == 'Selangor' || datum['State'] == 'Terengganu' || datum['State'] == 'Johor' || datum['State'] == 'Negeri Sembilan' || datum['State'] == 'Sarawak' || datum['State'] == 'Pulau Pinang'",
+            "test": "datum['State'] == 'Perlis' || datum['State'] == 'Kuala Lumpur' || datum['State'] == 'Selangor' || datum['State'] == 'Terengganu' || datum['State'] == 'Kelantan' || datum['State'] == 'Sabah' || datum['State'] == 'Sarawak' || datum['State'] == 'Pahang'",
             "value": 1
           },
           "value": 0
