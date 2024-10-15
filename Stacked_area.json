@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Number of secondary schools by state over time (normalised)",
+    "text": "Number of secondary schools per 1,000 people by state, over time",
     "font": "Lato",
     "anchor": "start",
     "fontSize": 17
