@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-  "text": "Relationship Between Crime Index and Unemployment rates by State in 2020",
+  "text": "Relationship Between mean household income and crime index by State in 2020",
   "font": "Lato",
   "anchor": "start",
   "fontSize": 17
@@ -14,7 +14,7 @@
   },
   "transform": [
     {"filter": "datum['Crime Index'] != null"},
-    {"filter": "datum['Unemployment'] != null"},
+    {"filter": "datum['Mean Income'] != null"},
     {"filter": "datum['Population'] != null"}
   ],
   "params": [
@@ -31,14 +31,14 @@
   ],
   "transform": [
     {"filter": "datum['Crime Index'] != null"},
-    {"filter": "datum['Unemployment'] != null"},
+    {"filter": "datum['Mean Income'] != null"},
     {"filter": "datum['Population'] != null"},
     {
       "filter": "RegionSelection == 'All' || datum['Region'] == RegionSelection"
     }
   ],
   "encoding": {
-    "y": {
+    "x": {
       "field": "Crime Index",
       "type": "quantitative",
       "title": "Crime Index",
@@ -51,16 +51,16 @@
         "domain": [400, 20000]
       }
     },
-    "x": {
-      "field": "Unemployment",
+    "y": {
+      "field": "Mean Income",
       "type": "quantitative",
-      "title": "Unemployment",
+      "title": "Mean Income",
       "axis": {
         "tickCount": 6
       },
       "scale": {
         "type": "linear",
-        "domain": [0, 10]
+        "domain": [4000, 13000]
       }
     },
     "color": {
@@ -104,7 +104,7 @@
         "tooltip": [
           {"field": "State", "type": "nominal", "title": "State"},
           {"field": "Crime Index", "type": "quantitative", "title": "Crime Index", "format": ","},
-          {"field": "Unemployment", "type": "quantitative", "title": "Unemployment", "format": ","},
+          {"field": "Mean Income", "type": "quantitative", "title": "Mean Income", "format": ","},
           {"field": "Population", "type": "quantitative", "title": "Population", "format": ","}
         ]
       }
@@ -131,7 +131,7 @@
         "tooltip": [
           {"field": "State", "type": "nominal", "title": "State"},
           {"field": "Crime Index", "type": "quantitative", "title": "Crime Index", "format": ","},
-          {"field": "Unemployment", "type": "quantitative", "title": "Unemployment", "format": ","},
+          {"field": "Mean Income", "type": "quantitative", "title": "Mean Income", "format": ","},
           {"field": "Population", "type": "quantitative", "title": "Population", "format": ","}
         ]
       }
