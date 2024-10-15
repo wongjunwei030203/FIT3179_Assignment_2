@@ -127,13 +127,7 @@
             "value": 1
           },
           "value": 0
-        },
-        "tooltip": [
-          {"field": "State", "type": "nominal", "title": "State"},
-          {"field": "Crime Index", "type": "quantitative", "title": "Crime Index", "format": ","},
-          {"field": "Mean Income", "type": "quantitative", "title": "Mean Income", "format": ","},
-          {"field": "GDP", "type": "quantitative", "title": "GDP", "format": ","}
-        ]
+        }
       }
     }
   ]
