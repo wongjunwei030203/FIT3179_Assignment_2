@@ -69,7 +69,7 @@
       "title": "Region",
       "scale": {
         "domain": ["East Malaysia", "West Malaysia"],
-        "range": ["#8B4513", "#4682B4"] 
+        "range": ["#B22222", "#D2691E"]
       }
     },
     "opacity": {
