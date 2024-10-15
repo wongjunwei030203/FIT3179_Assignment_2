@@ -64,12 +64,12 @@
       }
     },
     "color": {
-      "field": "Region",
+      "field": "Quartile",
       "type": "nominal",
-      "title": "Region",
+      "title": "Quartile",
       "scale": {
-        "domain": ["East Malaysia", "West Malaysia"],
-        "range": ["#8B4513", "#4682B4"] 
+        "domain": ["Quartile 1", "Middle Income", "Quartile 3"],
+        "range": ["#1f77b4", "#ff7f0e", "#2ca02c"]
       }
     },
     "opacity": {
@@ -105,7 +105,8 @@
           {"field": "State", "type": "nominal", "title": "State"},
           {"field": "Enrolment", "type": "quantitative", "title": "Enrolment", "format": ","},
           {"field": "Mean Income", "type": "quantitative", "title": "Mean Income", "format": ","},
-          {"field": "Population", "type": "quantitative", "title": "Population", "format": ","}
+          {"field": "Population", "type": "quantitative", "title": "Population", "format": ","},
+          {"field": "Quartile", "type": "nominal", "title": "Quartile"}
         ]
       }
     },
