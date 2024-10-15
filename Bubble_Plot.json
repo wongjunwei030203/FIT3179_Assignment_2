@@ -69,7 +69,7 @@
       "title": "Quartile",
       "scale": {
         "domain": ["Quartile 1", "Middle Income", "Quartile 3"],
-        "range": ["#FF8C00", "#1E90FF", "#B22222"]
+        "range": ["#FF8C00", "#1E90FF", "#32CD32"]
       }
     },
     "opacity": {
