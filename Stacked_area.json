@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Number of secondary schools by state over time",
+    "text": "Number of secondary schools by state over time (normalised)",
     "font": "Lato",
     "anchor": "start",
     "fontSize": 17
@@ -28,9 +28,9 @@
       }
     },
     "y": {
-      "field": "Number of secondary schools",
+      "field": "Normalised number of secondary schools",
       "type": "quantitative",
-      "title": "Number of Secondary Schools",
+      "title": "Normalised number of secondary schools",
       "axis": {
         "grid": false
       }
@@ -45,7 +45,6 @@
           "#F4A460", "#DEB887", "#DAA520", "#BDB76B", "#808000",
           "#6B8E23", "#556B2F", "#8FBC8F", "#4682B4"
 
-
         ]
       }
     },
@@ -59,7 +58,7 @@
     "tooltip": [
       {"field": "Year", "type": "temporal", "title": "Year", "format": "%Y"},
       {"field": "State", "type": "nominal", "title": "State"},
-      {"field": "Number of secondary schools", "type": "quantitative", "title": "Number of Secondary Schools"}
+      {"field": "Normalised number of secondary schools", "type": "quantitative", "title": "Normalised number of secondary schools"}
     ]
   },
   "selection": {
