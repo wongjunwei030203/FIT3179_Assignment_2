@@ -69,7 +69,7 @@
       "title": "Quartile",
       "scale": {
         "domain": ["Quartile 1", "Middle Income", "Quartile 3"],
-        "range": ["#1f77b4", "#ff7f0e", "#2ca02c"]
+        "range": ["#1E90FF", "#00CED1", "#20B2AA"]
       }
     },
     "opacity": {
@@ -125,7 +125,7 @@
         "color": {"value": "black"},
         "opacity": {
           "condition": {
-            "test": "datum['State'] == 'Perlis' || datum['State'] == 'Kuala Lumpur' || datum['State'] == 'Selangor' || datum['State'] == 'Terengganu' || datum['State'] == 'Negeri Sembilan' || datum['State'] == 'Johor' || datum['State'] == 'Sarawak' || datum['State'] == 'Pulau Pinang'",
+            "test": "datum['State'] == 'Perlis' || datum['State'] == 'Kuala Lumpur' || datum['State'] == 'Selangor' || datum['State'] == 'Terengganu' || datum['State'] == 'Kelantan' || datum['State'] == 'Sabah' || datum['State'] == 'Sarawak' || datum['State'] == 'Pahang'",
             "value": 1
           },
           "value": 0
