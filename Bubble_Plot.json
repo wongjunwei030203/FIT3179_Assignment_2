@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-  "text": "Secondary school enrolment rate versus Unemployment rates by State in 2020",
+  "text": "Secondary school enrolment rate versus mean household income by State in 2020",
   "font": "Lato",
   "anchor": "start",
   "fontSize": 17
@@ -14,7 +14,7 @@
   },
   "transform": [
     {"filter": "datum['Enrolment'] != null"},
-    {"filter": "datum['Unemployment'] != null"},
+    {"filter": "datum['Mean Income'] != null"},
     {"filter": "datum['Population'] != null"}
   ],
   "params": [
@@ -31,14 +31,14 @@
   ],
   "transform": [
     {"filter": "datum['Enrolment'] != null"},
-    {"filter": "datum['Unemployment'] != null"},
+    {"filter": "datum['Mean Income'] != null"},
     {"filter": "datum['Population'] != null"},
     {
       "filter": "RegionSelection == 'All' || datum['Region'] == RegionSelection"
     }
   ],
   "encoding": {
-    "y": {
+    "x": {
       "field": "Enrolment",
       "type": "quantitative",
       "title": "Secondary school enrolment rate",
@@ -51,16 +51,16 @@
         "domain": [80, 105]
       }
     },
-    "x": {
-      "field": "Unemployment",
+    "y": {
+      "field": "Mean Income",
       "type": "quantitative",
-      "title": "Unemployment",
+      "title": "Mean Income",
       "axis": {
         "tickCount": 6
       },
       "scale": {
         "type": "linear",
-        "domain": [0, 10]
+        "domain": [4000, 13000]
       }
     },
     "color": {
@@ -104,7 +104,7 @@
         "tooltip": [
           {"field": "State", "type": "nominal", "title": "State"},
           {"field": "Enrolment", "type": "quantitative", "title": "Enrolment", "format": ","},
-          {"field": "Unemployment", "type": "quantitative", "title": "Unemployment", "format": ","},
+          {"field": "Mean Income", "type": "quantitative", "title": "Mean Income", "format": ","},
           {"field": "Population", "type": "quantitative", "title": "Population", "format": ","}
         ]
       }
@@ -123,7 +123,7 @@
         "color": {"value": "black"},
         "opacity": {
           "condition": {
-            "test": "datum['State'] == 'Perlis' || datum['State'] == 'Kuala Lumpur' || datum['State'] == 'Selangor' || datum['State'] == 'Negeri Sembilan' || datum['State'] == 'Pahang' || datum['State'] == 'Sabah' || datum['State'] == 'Pahang'",
+            "test": "datum['State'] == 'Perlis'",
             "value": 1
           },
           "value": 0
@@ -131,7 +131,7 @@
         "tooltip": [
           {"field": "State", "type": "nominal", "title": "State"},
           {"field": "Enrolment", "type": "quantitative", "title": "Enrolment", "format": ","},
-          {"field": "Unemployment", "type": "quantitative", "title": "Unemployment", "format": ","},
+          {"field": "Mean Income", "type": "quantitative", "title": "Mean Income", "format": ","},
           {"field": "Population", "type": "quantitative", "title": "Population", "format": ","}
         ]
       }
