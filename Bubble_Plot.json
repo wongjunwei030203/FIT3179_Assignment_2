@@ -91,6 +91,7 @@
           "type": "single",
           "on": "mouseover",
           "clear": "mouseout",
+          
           "empty": "all"
         }
       },
@@ -128,13 +129,7 @@
             "value": 1
           },
           "value": 0
-        },
-        "tooltip": [
-          {"field": "State", "type": "nominal", "title": "State"},
-          {"field": "Enrolment", "type": "quantitative", "title": "Enrolment", "format": ","},
-          {"field": "Mean Income", "type": "quantitative", "title": "Mean Income", "format": ","},
-          {"field": "Population", "type": "quantitative", "title": "Population", "format": ","}
-        ]
+        }
       }
     }
   ]
