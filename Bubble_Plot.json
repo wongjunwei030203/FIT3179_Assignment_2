@@ -7,7 +7,7 @@
   "fontSize": 17
   },
   "width": 470,
-  "height": 470,
+  "height": 440,
   "background": "transparent",
   "data": {
     "url": "https://raw.githubusercontent.com/wongjunwei030203/FIT3179_Assignment_2/main/data/Bubble_Plot_data.csv"
