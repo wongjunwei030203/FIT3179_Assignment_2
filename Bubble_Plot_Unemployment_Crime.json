@@ -97,9 +97,9 @@
       "mark": "circle",
       "encoding": {
         "size": {
-          "field": "Population",
+          "field": "GDP",
           "type": "quantitative",
-          "title": "Population"
+          "title": "GDP"
         },
         "tooltip": [
           {"field": "State", "type": "nominal", "title": "State"},
@@ -123,7 +123,7 @@
         "color": {"value": "black"},
         "opacity": {
           "condition": {
-            "test": "datum['State'] == 'Selangor' || datum['State'] == 'Kuala Lumpur' || datum['State'] == 'Johor' || datum['State'] == 'Perlis' || datum['State'] == 'Kelantan' || datum['State'] == 'Sarawak' || datum['State'] == 'Perak' || datum['State'] == 'Pulau Pinang'",
+            "test": "datum['State'] == 'Selangor' || datum['State'] == 'Kuala Lumpur' || datum['State'] == 'Johor' || datum['State'] == 'Perlis' || datum['State'] == 'Kelantan' || datum['State'] == 'Sarawak' || datum['State'] == 'Melaka' || datum['State'] == 'Pulau Pinang'",
             "value": 1
           },
           "value": 0
@@ -132,7 +132,7 @@
           {"field": "State", "type": "nominal", "title": "State"},
           {"field": "Crime Index", "type": "quantitative", "title": "Crime Index", "format": ","},
           {"field": "Mean Income", "type": "quantitative", "title": "Mean Income", "format": ","},
-          {"field": "Population", "type": "quantitative", "title": "Population", "format": ","}
+          {"field": "GDP", "type": "quantitative", "title": "GDP", "format": ","}
         ]
       }
     }
