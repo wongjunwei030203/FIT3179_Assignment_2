@@ -1,0 +1,10 @@
+1. Year: https://archive.data.gov.my/data/ms_MY/dataset/labour-force-statistics-malaysia-1092, https://data.gov.my/data-catalogue/lfs_state_sex
+2. Unemployment rate: https://open.dosm.gov.my/data-catalogue/population_state
+3. Population: https://archive.data.gov.my/data/en_US/dataset/principal-statistics-of-education-services-malaysia
+4. Expenditure in education: https://archive.data.gov.my/data/ms_MY/dataset/number-of-secondary-schools-in-government-government-aided-by-state-malaysia
+5. Number of secondary schools: https://archive.data.gov.my/data/en_US/dataset/enrolment-rate-in-secondary-education-malaysia
+6. Secondary school enrolment rate: https://govdocs.sinarproject.org/documents/department-of-statistics/crime-statistics-malaysia-2021/bab-1-jenayah-indeks-2021-v1.xlsx/view
+7. Crime index: https://open.dosm.gov.my/data-catalogue/hh_poverty_state
+8. Poverty rate: https://data.gov.my/data-catalogue/hies_state
+9. GDP per capita: https://en.wikipedia.org/wiki/List_of_Malaysian_states_by_GDP
+10. Household income: https://data.gov.my/data-catalogue/hies_state
