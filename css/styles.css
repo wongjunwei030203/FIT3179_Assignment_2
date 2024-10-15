@@ -19,12 +19,12 @@ h1 {
 }
 
 body {
-    background-color: rgb(233, 241, 250);
+    background-color: rgb(225,241,253);
 }
 
 .page {
     max-width: 1305px;
-    background-color: rgb(233, 241, 250);
+    background-color: rgb(225,241,253);
     margin: auto;
     padding-left: 45px;
     padding-right: 45px;
