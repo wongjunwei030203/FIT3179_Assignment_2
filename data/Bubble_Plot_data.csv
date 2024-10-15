@@ -1,16 +1,16 @@
-﻿State,Enrolment,Crime Index,Unemployment,Population,Region,Mean Income
-Johor,97.09,5550,3.5,4009.7,West Malaysia,7264
-Kedah,90.2,4131,4.2,2131.4,West Malaysia,5005
-Kelantan,82.32,4531,4.3,1792.5,West Malaysia,4411
-Melaka,97.4,1794,2.2,998.4,West Malaysia,7186
-Negeri Sembilan,98.2,2431,3.8,1200,West Malaysia,6184
-Pahang,87.8,4431,3.1,1591.3,West Malaysia,5144
-Perak,90.02,3388,4.8,2496,West Malaysia,5081
-Perlis,101.65,493,4.3,284.9,West Malaysia,4971
-Pulau Pinang,97.43,3853,3.5,1740.4,West Malaysia,6850
-Sabah,81.95,5799,8,3418.8,East Malaysia,5215
-Sarawak,85.64,7850,4.3,2453.7,East Malaysia,5087
-Selangor,94.5,17272,4.3,6994.4,West Malaysia,9668
-Terengganu,85.2,2099,4.1,1149.4,West Malaysia,6051
-Kuala Lumpur,91,11209,4,1982.1,West Malaysia,11728
-Putrajaya,82.9,,1.5,,West Malaysia,12322
+﻿State,Enrolment,Crime Index,Unemployment,Population,Region,Mean Income,Quartile
+Johor,97.09,5550,3.5,4009.7,West Malaysia,7264,Quartile 3
+Kedah,90.2,4131,4.2,2131.4,West Malaysia,5005,Quartile 1
+Kelantan,82.32,4531,4.3,1792.5,West Malaysia,4411,Quartile 1
+Melaka,97.4,1794,2.2,998.4,West Malaysia,7186,Middle Income
+Negeri Sembilan,103.2,2431,3.8,1200,West Malaysia,6184,Middle Income
+Pahang,87.8,4431,3.1,1591.3,West Malaysia,5144,Middle Income
+Perak,90.02,3388,4.8,2496,West Malaysia,5081,Quartile 1
+Perlis,101.65,493,4.3,284.9,West Malaysia,4971,Quartile 1
+Pulau Pinang,97.43,3853,3.5,1740.4,West Malaysia,6850,Middle Income
+Sabah,81.95,5799,8,3418.8,East Malaysia,5215,Middle Income
+Sarawak,85.64,7850,4.3,2453.7,East Malaysia,5087,Middle Income
+Selangor,94.5,17272,4.3,6994.4,West Malaysia,9668,Quartile 3
+Terengganu,85.2,2099,4.1,1149.4,West Malaysia,6051,Middle Income
+Kuala Lumpur,85.6,11209,4,1982.1,West Malaysia,11728,Quartile 3
+Putrajaya,82.9,,1.5,,West Malaysia,12322,Quartile 3
