@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-  "text": "What is the impact of income on the crime index?",
+  "text": "What is the impact of Household Income on the Crime Index?",
   "font": "Lato",
   "anchor": "start",
   "fontSize": 17
